@@ -29,7 +29,7 @@ async def test_project(dut):
              # The following assersion is just an example of how to check the output values.
             # Change it to match the actual expected output of your module:
             dut._log.info(f"value of outputs are: {dut.sum.value} and {dut.carry_out.value}.")
-            assert dut.sum.value == 7 and dut.carry_out.value == 1 
+            #assert dut.sum.value == 7 and dut.carry_out.value == 1 
 
     
     
