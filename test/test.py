@@ -30,7 +30,7 @@ async def test_project(dut):
             # The following assersion is just an example of how to check the output values.
             # Change it to match the actual expected output of your module:
             dut._log.info(f"value of outputs are: {dut.sum.value} and {dut.carry_out.value}.")
-            assert dut.sum.value == (a_vals[i] + b_vals[j])%16 and dut.carry_out.value == ( 1 if (a_vals[i] + b_vals[j]) >= 16 else 0)   
+            assert int(dut.sum.value) == ((a_vals[i] + b_vals[j])%16) and int(dut.carry_out.value) == ( 1 if (a_vals[i] + b_vals[j]) >= 16) else 0)   
         
     
    
